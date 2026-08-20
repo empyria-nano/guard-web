@@ -1,12 +1,12 @@
 {
 	"name": "@empyria/webui",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Restate.dev helpers for the Empyria nanoservice framework",
 	"license": "MIT",
 	"author": "Imre Fazekas <imre.fazekas@icloud.com>",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/imrefazekas/empyria-guard-web.git"
+		"url": "git+https://github.com/empyria-nano/guard-web.git"
 	},
 	"type": "module",
 	"scripts": {
@@ -23,7 +23,7 @@
 		"lint:fix": "bun oxlint --fix"
 	},
 	"dependencies": {
-		"@empyria/common": "0.1.1",
+		"@empyria/common": "0.1.2",
 		"@iconify-json/lucide": "^1.2.124",
 		"@iconify-json/simple-icons": "^1.2.93",
 		"@pinia/nuxt": "^1.0.2",
