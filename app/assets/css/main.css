@@ -1,0 +1,189 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@plugin "@tailwindcss/typography";
+
+@theme static {
+	--font-sans: 'Public Sans', sans-serif;
+
+	--color-green-50: #effdf5;
+	--color-green-100: #d9fbe8;
+	--color-green-200: #b3f5d1;
+	--color-green-300: #75edae;
+	--color-green-400: #00dc82;
+	--color-green-500: #00c16a;
+	--color-green-600: #00a155;
+	--color-green-700: #007f45;
+	--color-green-800: #016538;
+	--color-green-900: #0a5331;
+	--color-green-950: #052e16;
+}
+
+@theme {
+	--color-cbh-50: #f4f6fb;
+	--color-cbh-100: #e8ebf6;
+	--color-cbh-200: #cdd6ea;
+	--color-cbh-300: #a1b3d8;
+	--color-cbh-400: #6e8bc2;
+	--color-cbh-500: #4c6dab;
+	--color-cbh-600: #3c5896;
+	--color-cbh-700: #2f4475;
+	--color-cbh-800: #2a3a62;
+	--color-cbh-900: #283452;
+	--color-cbh-950: #1a2137;
+
+	--font-sans: 'Montserrat', system-ui, sans-serif;
+	--breakpoint-3xl: 1920px;
+	--breakpoint-4xl: 2560px;
+	--breakpoint-5xl: 3840px;
+
+	@keyframes tada {
+		from {
+			transform: scale3d(1, 1, 1);
+		}
+
+		10%,
+		20% {
+			transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+		}
+
+		30%,
+		50%,
+		70%,
+		90% {
+			transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+		}
+
+		40%,
+		60%,
+		80% {
+			transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+		}
+
+		to {
+			transform: scale3d(1, 1, 1);
+		}
+	}
+
+	--animate-tada: tada 1s ease-in-out infinite;
+
+	@keyframes backOutLeft {
+		0% {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		20% {
+			transform: translateX(0px) scale(0.8);
+			opacity: 0.7;
+		}
+
+		100% {
+			transform: translateX(-100px) scale(0.8);
+			opacity: 0.7;
+		}
+	}
+
+	--animate-backOutLeft: backOutLeft 0.8s ease-in-out infinite;
+
+	@keyframes backOutRight {
+		0% {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		20% {
+			transform: translateX(0px) scale(0.8);
+			opacity: 0.7;
+		}
+
+		100% {
+			transform: translateX(50px) scale(0.8);
+			opacity: 0.5;
+		}
+	}
+
+	--animate-backOutRight: backOutRight 0.8s ease-in-out infinite;
+
+	@keyframes outRight {
+		0% {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		100% {
+			transform: translateX(50px);
+			opacity: 0.5;
+		}
+	}
+
+	--animate-outRight: outRight 0.8s ease-in-out infinite;
+
+	@keyframes outDown {
+		0% {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		100% {
+			transform: translateY(50px);
+			opacity: 0.5;
+		}
+	}
+
+	--animate-outDown: outDown 0.8s ease-in-out infinite;
+
+	@keyframes outUp {
+		0% {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		100% {
+			transform: translateY(-50px);
+			opacity: 0.5;
+		}
+	}
+
+	--animate-outUp: outUp 0.8s ease-in-out infinite;
+
+	@keyframes spinning {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	--animate-spinning: spinning 0.8s linear infinite;
+}
+
+@utility animate-tada {
+	animation: var(--animate-tada);
+}
+
+@utility animate-backOutLeft {
+	animation: var(--animate-backOutLeft);
+}
+
+@utility animate-backOutRight {
+	animation: var(--animate-backOutRight);
+}
+
+@utility animate-outRight {
+	animation: var(--animate-outRight);
+}
+
+@utility animate-outDown {
+	animation: var(--animate-outDown);
+}
+
+@utility animate-outUp {
+	animation: var(--animate-outUp);
+}
+
+@utility animate-spinning {
+	animation: var(--animate-spinning);
+}
