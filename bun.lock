@@ -6,6 +6,8 @@
       "name": "@principia/ui",
       "dependencies": {
         "@empyria/common": "0.1.3",
+        "@empyria/moleculer": "0.1.3",
+        "@empyria/restate": "0.1.6",
         "@iconify-json/lucide": "^1.2.126",
         "@iconify-json/simple-icons": "^1.2.93",
         "@pinia/nuxt": "^1.0.2",
@@ -125,6 +127,10 @@
     "@empyria/classification": ["@empyria/classification@0.1.2", "", { "dependencies": { "isa.js": "2.2.18", "ms": "2.1.3", "transliteration": "2.6.1" } }, "sha512-4miLiHryrGFxi5HQhNdK9h+Klm/1g2dxtgUXjPgqpZdqCRjjaD7chYk94grfj8T5ZQBhO3fV2nQVv5WE6vKrWQ=="],
 
     "@empyria/common": ["@empyria/common@0.1.3", "", { "dependencies": { "@empyria/classification": "0.1.2", "ata-validator": "1.7.1", "clerobee": "1.0.8", "ms": "2.1.3" } }, "sha512-fysTybmoRG1Ht5NuhVGbLHjCrdy2jJYX2Ce+0ce1+xO4y5zxKn/kxYir639T2FCtNpVEmYYjTf20Fsip38cNrg=="],
+
+    "@empyria/moleculer": ["@empyria/moleculer@0.1.3", "", { "dependencies": { "@empyria/classification": "0.1.3", "@empyria/common": "0.1.3", "moleculer": "0.15.1" } }, "sha512-iH6SvBi3DHzh8uS6LA6oIn/tmTvQOwzoF/Le7JN9aPwp9GjiCCzRvs4LEnQqTB8YwWIBZCk46py7VMKVGQ+MeQ=="],
+
+    "@empyria/restate": ["@empyria/restate@0.1.6", "", { "dependencies": { "@empyria/classification": "0.1.3", "@empyria/common": "0.1.3", "@restatedev/pubsub": "0.3.2", "@restatedev/pubsub-client": "0.3.2", "@restatedev/restate-sdk": "1.16.9", "@restatedev/restate-sdk-clients": "1.16.9", "@restatedev/restate-sdk-core": "1.16.9", "croner": "10.0.1" } }, "sha512-N+7jsLLkPRLqW1Ry4Rbs2u0uJgBsMqqFqMT3FKhn/q+rASk2Fr6FHc4kusWVVYNReInDqNNv+u/EEWq4HaD7qA=="],
 
     "@esbuild/aix-ppc64": ["@esbuild/aix-ppc64@0.27.7", "", { "os": "aix", "cpu": "ppc64" }, "sha512-EKX3Qwmhz1eMdEJokhALr0YiD0lhQNwDqkPYyPhiSwKrh7/4KRjQc04sZ8db+5DVVnZ1LmbNDI1uAMPEUBnQPg=="],
 
@@ -355,6 +361,18 @@
     "@poppinss/dumper": ["@poppinss/dumper@0.7.0", "", { "dependencies": { "@poppinss/colors": "^4.1.5", "@sindresorhus/is": "^7.0.2", "supports-color": "^10.0.0" } }, "sha512-0UTYalzk2t6S4rA2uHOz5bSSW2CHdv4vggJI6Alg90yvl0UgXs6XSXpH96OH+bRkX4J/06djv29pqXJ0lq5Kag=="],
 
     "@poppinss/exception": ["@poppinss/exception@1.2.3", "", {}, "sha512-dCED+QRChTVatE9ibtoaxc+WkdzOSjYTKi/+uacHWIsfodVfpsueo3+DKpgU5Px8qXjgmXkSvhXvSCz3fnP9lw=="],
+
+    "@restatedev/pubsub": ["@restatedev/pubsub@0.3.2", "", { "peerDependencies": { "@restatedev/restate-sdk": "^1.9.1", "@restatedev/restate-sdk-zod": "^1.9.1", "zod": "^4.0.0" } }, "sha512-oJK175wl/K1WB4hAyNaZ43SCX7CehQyu1a+C49IOqGaSAT2x+MWo7jjwhMd5ZbTz4YFwZkFH0d6jFFMzQig0CQ=="],
+
+    "@restatedev/pubsub-client": ["@restatedev/pubsub-client@0.3.2", "", { "peerDependencies": { "@restatedev/restate-sdk-clients": "^1.9.1" } }, "sha512-9GfAI3LMw2M0YPCjrDSmeaT05gqHd5jufdgg4rKunAt5RdHVbkjw96RGFzysMnEI+I30OGuConzImvSonrVaBA=="],
+
+    "@restatedev/restate-sdk": ["@restatedev/restate-sdk@1.16.9", "", { "dependencies": { "@restatedev/restate-sdk-core": "1.16.9" } }, "sha512-fR5FE1aHgD7dSlyYhOmxTB2zX6VcFSALSXyQGyhzdqtqZwt5QpdlUTDwu6oFIex8vWdlEh8lq35ljcOzvQKZYw=="],
+
+    "@restatedev/restate-sdk-clients": ["@restatedev/restate-sdk-clients@1.16.9", "", { "dependencies": { "@restatedev/restate-sdk-core": "1.16.9" } }, "sha512-60qfyRiaDdNHNV7a3eyrlbQ9YaSr5sOE5lAMq0HgiRYNl/eiFvfBJ5vYZpdJmdq61oDRS8UCRJCtVSVUMclshg=="],
+
+    "@restatedev/restate-sdk-core": ["@restatedev/restate-sdk-core@1.16.9", "", {}, "sha512-x5doeVm2o7XNk5t+yeWBf2e/DEZpdri5C4A3b29b56zdOW0AQ7MexeYLGQUttDTdxP3/zYiwdxo03DKzG9wXqg=="],
+
+    "@restatedev/restate-sdk-zod": ["@restatedev/restate-sdk-zod@1.16.9", "", { "peerDependencies": { "zod": "^3.25.0 || ^4.0.0" } }, "sha512-1zUHYY8oWqbUmFonqhgO3d5YSor4uT8QtxjDXweof6o070Y9x1MQ5hZVXHtAkF5cJgvHNW7utYeZGjlIJxur6w=="],
 
     "@rolldown/binding-android-arm-eabi": ["@rolldown/binding-android-arm-eabi@1.2.5", "", { "os": "android", "cpu": "arm" }, "sha512-DLe/i+l8ynIBY7XEQ191TeZvCoowIGa18R+dIV30GW7DiOtp74i/xX8hs8GUjW5ARV7VZuie3d6AumSmCwbeRA=="],
 
@@ -1704,6 +1722,8 @@
 
     "zip-stream": ["zip-stream@6.0.1", "", { "dependencies": { "archiver-utils": "^5.0.0", "compress-commons": "^6.0.2", "readable-stream": "^4.0.0" } }, "sha512-zK7YHHz4ZXpW89AHXUPbQVGKI7uvkd3hzusTdotCg1UxyaVtg0zFJSTfW/Dq5f7OBBVnq6cZIaC8Ti4hb6dtCA=="],
 
+    "zod": ["zod@4.4.3", "", {}, "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ=="],
+
     "@babel/code-frame/@babel/helper-validator-identifier": ["@babel/helper-validator-identifier@7.29.7", "", {}, "sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg=="],
 
     "@babel/code-frame/js-tokens": ["js-tokens@4.0.0", "", {}, "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="],
@@ -1743,6 +1763,10 @@
     "@babel/traverse/@babel/generator": ["@babel/generator@7.29.8", "", { "dependencies": { "@babel/parser": "^7.29.8", "@babel/types": "^7.29.8", "@jridgewell/gen-mapping": "^0.3.12", "@jridgewell/trace-mapping": "^0.3.28", "jsesc": "^3.0.2" } }, "sha512-gZbepsdh3WDtgZKWL+vTPh71LSBrm/Y4/QDZBVCcYfmeTEEuoOYwlSy+G1StfJg+/Zy550u/3TATbm7qDbbMtg=="],
 
     "@babel/traverse/@babel/types": ["@babel/types@7.29.8", "", { "dependencies": { "@babel/helper-string-parser": "^7.29.7", "@babel/helper-validator-identifier": "^7.29.7" } }, "sha512-Vj1jF3cPfxg7OAfoI7QnVKLoILlm2JF9pnVHrX8qx7AHMiYWT+NDAA7jChlNgRS4WTLc/fD1lXLmPixluj+3Gg=="],
+
+    "@empyria/moleculer/@empyria/classification": ["@empyria/classification@0.1.3", "", { "dependencies": { "isa.js": "2.2.18", "ms": "2.1.3", "transliteration": "2.6.1" } }, "sha512-8MFukrfNQeJINh2+mF/vPBwHVLFhcSRHVnYe8qT0yUNocLi/ibC0JPoEPD5IS/gpLiI1v5rxxGHuTDeX9Z+AdA=="],
+
+    "@empyria/restate/@empyria/classification": ["@empyria/classification@0.1.3", "", { "dependencies": { "isa.js": "2.2.18", "ms": "2.1.3", "transliteration": "2.6.1" } }, "sha512-8MFukrfNQeJINh2+mF/vPBwHVLFhcSRHVnYe8qT0yUNocLi/ibC0JPoEPD5IS/gpLiI1v5rxxGHuTDeX9Z+AdA=="],
 
     "@isaacs/cliui/string-width": ["string-width@5.1.2", "", { "dependencies": { "eastasianwidth": "^0.2.0", "emoji-regex": "^9.2.2", "strip-ansi": "^7.0.1" } }, "sha512-HnLOCR3vjcY8beoNLtcjZ5/nxn2afmME6lhrDrebokqMap+XbeW8n9TXpPDOqdGK5qcI3oT0GKTW6wC7EMiVqA=="],
 
