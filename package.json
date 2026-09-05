@@ -1,6 +1,6 @@
 {
 	"name": "@empyria/webui",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"description": "Restate.dev helpers for the Empyria nanoservice framework",
 	"license": "MIT",
 	"author": "Imre Fazekas <imre.fazekas@icloud.com>",
@@ -23,13 +23,13 @@
 		"lint:fix": "bun oxlint --fix"
 	},
 	"dependencies": {
-		"@empyria/common": "0.1.6",
-		"@empyria/moleculer": "0.1.6",
-		"@empyria/restate": "0.1.8",
-		"@iconify-json/lucide": "^1.2.128",
+		"@empyria/common": "0.1.8",
+		"@empyria/moleculer": "0.1.7",
+		"@empyria/restate": "0.1.10",
+		"@iconify-json/lucide": "^1.2.129",
 		"@iconify-json/simple-icons": "^1.2.94",
 		"@pinia/nuxt": "^1.0.2",
-		"@simplewebauthn/browser": "^13.3.0",
+		"@simplewebauthn/browser": "^14.0.0",
 		"@trpc/client": "^11.18.0",
 		"@trpc/server": "^11.18.0",
 		"@vueuse/core": "^14.4.0",
@@ -41,7 +41,7 @@
 		"pinia-plugin-persistedstate": "^4.7.1",
 		"vue": "^3.5.42",
 		"vue-cal": "^5.0.1-rc.46",
-		"vue-router": "^5.3.0"
+		"vue-router": "^5.3.1"
 	},
 	"devDependencies": {
 		"@nuxt/fonts": "^0.14.0",
@@ -59,5 +59,5 @@
 		"bun": ">=1.4.0",
 		"node": ">=26"
 	},
-	"packageManager": "bun@1.4.0"
+	"packageManager": "bun@1.4.2"
 }
