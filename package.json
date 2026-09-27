@@ -1,6 +1,6 @@
 {
 	"name": "@empyria/webui",
-	"version": "0.1.15",
+	"version": "0.1.16",
 	"description": "Restate.dev helpers for the Empyria nanoservice framework",
 	"license": "MIT",
 	"author": "Imre Fazekas <imre.fazekas@icloud.com>",
@@ -23,11 +23,11 @@
 		"lint:fix": "bun oxlint --fix"
 	},
 	"dependencies": {
-		"@empyria/common": "0.3.5",
-		"@empyria/moleculer": "0.1.15",
-		"@empyria/restate": "0.1.19",
-		"@iconify-json/lucide": "^1.2.134",
-		"@iconify-json/simple-icons": "^1.2.96",
+		"@empyria/common": "0.3.6",
+		"@empyria/moleculer": "0.1.16",
+		"@empyria/restate": "0.1.20",
+		"@iconify-json/lucide": "^1.2.137",
+		"@iconify-json/simple-icons": "^1.2.97",
 		"@pinia/nuxt": "^1.0.2",
 		"@simplewebauthn/browser": "^14.0.0",
 		"@trpc/client": "^11.19.0",
@@ -45,15 +45,15 @@
 	},
 	"devDependencies": {
 		"@nuxt/fonts": "^0.14.0",
-		"@nuxt/ui": "^4.11.1",
+		"@nuxt/ui": "^4.11.2",
 		"@nuxtjs/tailwindcss": "7.0.0-beta.1",
 		"@tailwindcss/typography": "^0.5.20",
 		"nuxt": "^4.5.2",
 		"tailwindcss": "^4.3.3",
 		"typescript": "^7.0.2",
 		"vue-tsc": "^3.3.11",
-		"oxfmt": "0.68.0",
-		"oxlint": "1.83.0"
+		"oxfmt": "0.70.0",
+		"oxlint": "1.85.0"
 	},
 	"engines": {
 		"bun": ">=1.4.2",
