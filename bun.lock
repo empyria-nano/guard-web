@@ -5,9 +5,9 @@
 		"": {
 			"name": "@principia/ui",
 			"dependencies": {
-				"@empyria/common": "0.3.8",
+				"@empyria/common": "0.3.9",
 				"@empyria/moleculer": "0.1.8",
-				"@empyria/restate": "0.1.11",
+				"@empyria/restate": "0.2.11",
 				"@iconify-json/lucide": "^1.2.131",
 				"@iconify-json/simple-icons": "^1.2.95",
 				"@pinia/nuxt": "^1.0.2",
