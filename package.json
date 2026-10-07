@@ -1,0 +1,63 @@
+{
+	"name": "@empyria/webui",
+	"version": "0.1.27",
+	"description": "Restate.dev helpers for the Empyria nanoservice framework",
+	"license": "MIT",
+	"author": "Imre Fazekas <imre.fazekas@icloud.com>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/empyria-nano/guard-web.git"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"typecheck": "nuxt typecheck",
+		"clean": "pkill -9 -f 'nuxt dev' 2>/dev/null; rm -rf .nuxt .output dist node_modules/.cache node_modules/.vite",
+		"format": "bun oxfmt --check",
+		"format:fix": "bun oxfmt",
+		"lint": "bun oxlint",
+		"lint:fix": "bun oxlint --fix"
+	},
+	"dependencies": {
+		"@empyria/common": "0.3.12",
+		"@empyria/moleculer": "0.1.22",
+		"@empyria/restate": "0.4.22",
+		"@iconify-json/lucide": "^1.2.140",
+		"@iconify-json/simple-icons": "^1.2.99",
+		"@pinia/nuxt": "^1.0.2",
+		"@simplewebauthn/browser": "^14.0.0",
+		"@trpc/client": "^11.19.0",
+		"@trpc/server": "^11.19.0",
+		"@vueuse/core": "^15.0.0",
+		"@vueuse/nuxt": "^15.0.0",
+		"croner": "^10.0.1",
+		"cronstrue": "^3.30.0",
+		"moleculer": "0.15.2",
+		"ms": "^2.1.3",
+		"pinia-plugin-persistedstate": "^4.7.1",
+		"vue": "^3.5.43",
+		"vue-cal": "^5.0.1-rc.46",
+		"vue-router": "^5.4.0"
+	},
+	"devDependencies": {
+		"@nuxt/fonts": "^0.14.0",
+		"@nuxt/ui": "^4.11.3",
+		"@nuxtjs/tailwindcss": "7.0.0-beta.1",
+		"@tailwindcss/typography": "^0.5.20",
+		"nuxt": "^4.6.0",
+		"oxfmt": "0.72.0",
+		"oxlint": "1.87.0",
+		"tailwindcss": "^4.3.3",
+		"typescript": "^7.0.2",
+		"vue-tsc": "^3.3.12"
+	},
+	"engines": {
+		"bun": ">=1.4.2",
+		"node": ">=26"
+	},
+	"packageManager": "bun@1.4.2"
+}
