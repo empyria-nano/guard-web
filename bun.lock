@@ -5,8 +5,8 @@
 		"": {
 			"name": "@empyria/webui",
 			"dependencies": {
-				"@empyria/common": "0.3.13",
-				"@empyria/moleculer": "0.1.24",
+				"@empyria/common": "0.3.14",
+				"@empyria/moleculer": "0.1.25",
 				"@empyria/restate": "0.4.20",
 				"@iconify-json/lucide": "^1.2.140",
 				"@iconify-json/simple-icons": "^1.2.99",
@@ -488,7 +488,7 @@
 			{
 				"dependencies": {
 					"@empyria/classification": "0.1.11",
-					"@empyria/common": "0.3.13",
+					"@empyria/common": "0.3.14",
 					"moleculer": "0.15.2",
 				},
 			},
@@ -501,7 +501,7 @@
 			{
 				"dependencies": {
 					"@empyria/classification": "0.1.11",
-					"@empyria/common": "0.3.13",
+					"@empyria/common": "0.3.14",
 					"@restatedev/pubsub": "0.3.2",
 					"@restatedev/pubsub-client": "0.3.2",
 					"@restatedev/restate-sdk": "1.17.2",
