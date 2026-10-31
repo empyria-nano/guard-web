@@ -1,6 +1,6 @@
 {
 	"name": "@empyria/webui",
-	"version": "0.1.33",
+	"version": "0.1.34",
 	"description": "Restate.dev helpers for the Empyria nanoservice framework",
 	"license": "MIT",
 	"author": "Imre Fazekas <imre.fazekas@icloud.com>",
@@ -23,15 +23,15 @@
 		"lint:fix": "bun oxlint --fix"
 	},
 	"dependencies": {
-		"@empyria/common": "0.3.17",
-		"@empyria/moleculer": "0.1.28",
-		"@empyria/restate": "0.4.30",
-		"@iconify-json/lucide": "^1.2.148",
+		"@empyria/common": "0.3.18",
+		"@empyria/moleculer": "0.1.29",
+		"@empyria/restate": "0.4.31",
+		"@iconify-json/lucide": "^1.2.150",
 		"@iconify-json/simple-icons": "^1.2.101",
 		"@pinia/nuxt": "^1.0.3",
 		"@simplewebauthn/browser": "^14.0.0",
-		"@trpc/client": "^11.19.0",
-		"@trpc/server": "^11.19.0",
+		"@trpc/client": "^11.22.1",
+		"@trpc/server": "^11.22.1",
 		"@vueuse/core": "^15.0.0",
 		"@vueuse/nuxt": "^15.0.0",
 		"croner": "^11.0.0",
@@ -53,7 +53,7 @@
 		"oxlint": "1.90.0",
 		"tailwindcss": "^4.3.3",
 		"typescript": "^7.0.2",
-		"vue-tsc": "^3.3.13"
+		"vue-tsc": "^3.3.14"
 	},
 	"engines": {
 		"bun": ">=1.4.2",
